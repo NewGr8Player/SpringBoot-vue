@@ -13,41 +13,41 @@
             </el-table-column>
             <el-table-column
                     prop="username"
-                    label="username"
-                    width="120">
+                    label="用户名"
+                    width="300">
             </el-table-column>
             <el-table-column
                     prop="email"
-                    label="email"
-                    width="120">
+                    label="邮箱"
+                    width="200">
             </el-table-column>
             <el-table-column
                     prop="phone"
-                    label="phone"
+                    label="联系电话"
                     width="130">
             </el-table-column>
             <el-table-column
                     prop="sex"
-                    label="sex"
+                    label="性别"
                     width="100">
             </el-table-column>
             <el-table-column
                     prop="zone"
-                    label="zone"
+                    label="位置"
                     width="100">
             </el-table-column>
             <el-table-column
                     prop="create_datetime"
-                    label="create_datetime"
-                    width="300"
+                    label="创建日期"
+                    width="100"
                     :formatter="formatter">
             </el-table-column>
             <el-table-column
                     fixed="right"
-                    label="Operation"
+                    label="操作"
                     width="100">
                 <template scope="scope">
-                    <el-button @click="editItem(scope.$index, tableData)" type="text" size="large">Edit</el-button>
+                    <el-button @click="editItem(scope.$index, tableData)" type="text" size="large">修改</el-button>
                 </template>
             </el-table-column>
         </el-table>

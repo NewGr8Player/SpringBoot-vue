@@ -1,5 +1,9 @@
 <template>
-    <li class="el-menu-item is-active" style="">{{msg}}</li>
+    <div>
+        <div v-for="it in msg">
+            <li name="{{it.url}}" class="el-menu-item is-active" @click="" style="">{{it.text}}</li>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -8,7 +12,12 @@
         name: 'db-sidebar',
         data() {
             return {
-                msg: 'Dashboard'
+                msg: [{text: 'Dashboard',url: 'xx'},{text: 'Dashboard1',url:'xx1'}]
+            }
+        },
+        methods:{
+            liOnClick:function(){
+                alert(this.attribute("name"));
             }
         }
     }

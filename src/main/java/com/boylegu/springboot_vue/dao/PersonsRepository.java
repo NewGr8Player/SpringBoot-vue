@@ -27,5 +27,4 @@ public interface PersonsRepository extends JpaRepository<Persons, Long> {
     Page<Persons> findBySex(String sexName, Pageable pageable);
 
     Persons findById(Long id);
-
 }

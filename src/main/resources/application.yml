@@ -1,0 +1,21 @@
+server:
+  port: 8000
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+          hbm2ddl:
+            auto: update
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/restful?useUnicode=true&autoReconnect=true&failOverReadOnly=false&zeroDateTimeBehavior=round&autoReconnect=true
+    username: root
+    password: root
+  output:
+    ansi:
+      enabled: DETECT
+com:
+  boylegu:
+    paginatio:
+      max-per-page: 10
